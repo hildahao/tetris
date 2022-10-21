@@ -1,0 +1,37 @@
+.container{
+  display: flex;
+}
+
+
+.grid{
+   width: 200px;
+   height: 400px; /* 200个小方块每个给20px*20px的大小 */
+   background-color: black;
+   display: flex; /*(?)将容器设置为 display: flex ，这意味着子项成为弹性项，并且根据弹性盒模型布局它的内容。如果我不声明wrap，则子项在母项空间内水平排列且不换行*/
+   flex-wrap: wrap; /*换行*/
+}
+
+.grid div{
+  height: 20px;
+  width: 20px;
+  /*background-color: red;*/
+}
+/* .grid div 是指在grid这个ID下的div，其他div不会被影响*/
+
+.tetromino {
+  background-color: white;
+}
+
+.mini-grid{
+  margin-left: 50px;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: black;
+}
+
+.mini-grid div{
+  height: 20px;
+  width: 20px;
+}
